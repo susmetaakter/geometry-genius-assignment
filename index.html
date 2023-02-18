@@ -52,19 +52,19 @@
                 <img src="/images/rectangle.png" alt="" class="rounded-xl ml-7" />
               </figure>
               <div class="card-body items-center text-center">
-                <h2 class="card-title text-2xl font-semibold">Rectangle</h2>
+                <h2 id="rectangle" class="card-title text-2xl font-semibold">Rectangle</h2>
                 <h3 class="mb-2">Area(A) = w * l</h3>
                 <div class="flex ml-20">  
                   <div class="flex"> 
-                   <input class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="w">
+                   <input id="value-w" class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="w">
                    <p>cm</p>
                  </div>
                  <div class="flex ml-2"> 
-                   <input class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="l">
+                   <input id="value-l" class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="l">
                    <p>cm</p>
                  </div>
                 </div>
-                <button class="bg-sky-500 px-20 py-1 font-medium rounded text-white mt-5 mr-5 mb-5">Calculate</button>
+                <button id="second-card" class="bg-sky-500 px-20 py-1 font-medium rounded text-white mt-5 mr-5 mb-5">Calculate</button>
               </div>
             </div>
             <div class="card w-96 bg-base-100 shadow-xl">
@@ -154,7 +154,6 @@
         <!-- About Area Calculation -->
       <div class="cart-details w-[25] mx-auto">
         <h1 class="text-2xl text-center font-bold underline p-10 ml-10 mr-7">Area Calculation</h1>
-      </div>
       <div class="overflow-x-auto">
         <table class="table w-full">
           
@@ -168,10 +167,12 @@
           </tbody>
         </table>
       </div>
+      </div>
 
       </section>
     </main>
     <script src="js/blogging.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/function.js"></script>
 </body>
 </html>
