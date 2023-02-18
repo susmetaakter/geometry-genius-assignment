@@ -17,22 +17,22 @@
             <h3 class="ml-5 mb-2 text-neutral-600">Geometry Genius</h3>
         </div>
         <div class="ml-auto">
-            <button class="bg-sky-500 px-5 py-1 font-medium rounded-lg text-white mt-5 mr-5">Blog</button>
+            <button id="btn-blog" class="bg-sky-500 px-5 py-1 font-medium rounded-lg text-white mt-5 mr-5">Blog</button>
             </div>
         </div> 
       </nav>
     </header>
     <main>
       <!-- about geometry details and area calculation -->
-      <section class="flex gap-4 w-11/12 mx-auto mt-10">
+      <section class="flex flex-col lg:flex-row gap-4 w-11/12 mx-auto mt-10 mb-10">
         <div class="geometric-details-container">
-          <div class="geometry-details flex gap-4">
+          <div class="geometry-details flex flex-col lg:flex-row gap-4">
             <div class="card w-96 bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
                 <img src="/images/triangle.png" alt="" class="rounded-xl ml-7" />
               </figure>
               <div class="card-body items-center text-center">
-                <h2 class="card-title text-2xl font-semibold">Triangle</h2>
+                <h2 id="triangle-card" class="card-title text-2xl font-semibold">Triangle</h2>
                 <h3 class="mb-2">Area(A) = 0.5 * b * h</h3>
                 <div class="flex ml-20">  
                   <div class="flex"> 
@@ -44,7 +44,7 @@
                    <p>cm</p>
                  </div>
                 </div>
-                <button class="bg-sky-500 px-20 py-1 font-medium rounded text-white mt-5 mr-5 mb-5">Calculate</button>
+                <button id="triangle-btn" class="bg-sky-500 px-20 py-1 font-medium rounded text-white mt-5 mr-5 mb-5">Calculate</button>
               </div>
             </div>
             <div class="card w-96 bg-base-100 shadow-xl">
@@ -88,7 +88,7 @@
               </div>
             </div>
           </div>
-          <div class="geometry-details flex gap-4">
+          <div class="geometry-details flex flex-col lg:flex-row gap-4">
             <div class="card w-96 bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
                 <img src="/images/rhombus.png" alt="" class="rounded-xl ml-7" />
@@ -152,15 +152,25 @@
           </div>
         </div>
         <!-- About Area Calculation -->
-        <div class="area-calculation">
-          <div class="card bg-base-100 shadow-xl w-80 p-20">
+        <div class="area-calculation w-full md:w-[30%] lg:[w-30%] mx-auto p-10">
+          <div class="card bg-base-100 shadow-xl">
             <div class="card-body">
-              <h2 class="card-title underline text-center text-xl font-medium">Area Calculation</h2>
-              <p></p>
+              <h2 class="card-title underline text-center text-xl font-medium mb-5">Area Calculation</h2>
+            <div class="p-5">
+              <p class="mb-5">1.</p>
+              <p class="mb-5">2.</p>
+              <p class="mb-5">3.</p>
+              <p class="mb-5">5.</p>
+              <p class="mb-5">6.</p>
+              <p class="mb-5">7.</p>
+            </div> 
+            
             </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="js/blogging.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
