@@ -4,12 +4,30 @@ let serial= 0;
 document.getElementById('first-card').addEventListener('click', function(){
     serial += 1;
     const shapeName = document.getElementById('triangle').innerText;
+
     const valueOfb = document.getElementById('value-b').value;
     //const valueOfb = parseFloat(valueOfB);
     const valueOfh = document.getElementById('value-h').value;
+
+    if((valueOfb || valueOfh) < 0 ){
+        alert('please enter positive number');
+        return;
+    }
+
+    if(isNaN(valueOfb || valueOfh)){
+        alert('please enter a number');
+        return;
+    }
+    if((valueOfb || valueOfh) == " "){
+        alert('please enter value')
+        return;
+    }
+
     const areaOfShape = 0.5 * parseFloat(valueOfb) * parseFloat(valueOfh);
     displayData(shapeName, areaOfShape.toFixed(2));
+
 });
+
 //for second card
 document.getElementById('second-card').addEventListener('click', function(){
     serial += 1;
@@ -17,6 +35,23 @@ document.getElementById('second-card').addEventListener('click', function(){
     const valueOfw = document.getElementById('value-w').value;
     //const valueOfb = parseFloat(valueOfB);
     const valueOfl = document.getElementById('value-l',).value;
+
+    if(isNaN(valueOfw || valueOfl)){
+        alert('please enter a number');
+        return;
+    }
+
+    if((valueOfw || valueOfl) < 0 ){
+        alert('please enter positive number');
+        return;
+    }
+
+    if((valueOfw || valueOfl) == " "){
+        alert('please enter value')
+        return;
+    }
+
+
     const areaOfShape = parseFloat(valueOfw) * parseFloat(valueOfl);
     displayData(shapeName, areaOfShape.toFixed(2));
 });
