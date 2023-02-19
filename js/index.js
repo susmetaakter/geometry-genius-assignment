@@ -18,10 +18,6 @@ document.getElementById('first-card').addEventListener('click', function(){
         alert('please enter a number');
         return;
     }
-    if((valueOfb || valueOfh) == " "){
-        alert('please enter value')
-        return;
-    }
 
     const areaOfShape = 0.5 * parseFloat(valueOfb) * parseFloat(valueOfh);
     displayData(shapeName, areaOfShape.toFixed(2));
@@ -45,12 +41,6 @@ document.getElementById('second-card').addEventListener('click', function(){
         alert('please enter positive number');
         return;
     }
-
-    if((valueOfw || valueOfl) == " "){
-        alert('please enter value')
-        return;
-    }
-
 
     const areaOfShape = parseFloat(valueOfw) * parseFloat(valueOfl);
     displayData(shapeName, areaOfShape.toFixed(2));
