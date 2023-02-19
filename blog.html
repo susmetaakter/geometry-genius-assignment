@@ -1,44 +1,60 @@
-Q-1: What is dom? What is the purpose of dom?
-
-Answer-1: DOM full form is Document Object Model. DOM is a web Document that is used in computer and it connects different types of programming language.
-
-The main purpose of the DOM is that changing the document structure, style, and content. It represents the document as object or nodes that programming language can connect with the page. DOM can allow manipulation. It can control the scripting language like javascript.
-
-
-
-Q-2: How can you select an element from DOM?
-
-Answer-2:
-  i.getElementsByTagName()
-  for example:const allHeadings = document.getElementsByTagName('h1');
-  The getElementsByTagName() returns the element that matched the passed elements.If getElementsByTagName is called upon an element, then only children of the element are searched.
-
-  ii.getElementById()
-  for example: const geometricDetailsContainer = document.getElementById("geometric-details-container");
-  The getElementById() selects an element based on its unique ID. This is the easiest way to find an HTML element in the DOM tree.
-
-  iii.getElementsByClassName()
-  for example: const geometryDetails = document.getElementsByClassName("geometry-details");
-  The getElementsByClassName() method select all the elements specific class name.
-
-  iv.querySelector()
-  for example: const geometricContainer = document.querySelector('.geometric-container li');
-  It returns the first element that matched in the document.
-
-  v.querySelectorAll()
-  for example: const geometricContainer = document.querySelectorAll('.geometric-container li'); 
-  It returns all the element of the document.
-
-
-
-  Q-3: What is event Bubble?
-
-  Answer-3: Event Bubble is a method of event propagation in the HTML DOM API when an event is an element inside the second element. And it is the concept of DOM.
-  
-  
-
-  Q-4: What is the callback Function? What is work of callback Function?
-
-  Answer-4: A callback function is a function that is to be executed after another function execution.
-
-  A callback is a function passed into another function as an argument to be executed later.A high order function is a function that accepts another function as an argument.Callback function can be synchronous or asynchronous.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-10/12">
+      <h1 class="text-3xl text-center font-semibold mt-5">Explore Blog</h1>
+    </header>
+    <main>
+      <section class="w-10/12 ml-20 mb-20">
+        <div>
+          <h1 class="text-2xl mt-5 font-semibold">Q-1: What is dom? What is the purpose of dom?</h1>
+          <p class="text-lg font-medium mt-3"><span class="mb-5 underline">Answer-1:</span> <br> DOM full form is Document Object Model. DOM is a web Document that is used in computer and it connects different types of programming language. <br>
+          <br>  
+          The main purpose of the DOM is that changing the document structure, style, and content. It represents the document as object or nodes that programming language can connect with the page. DOM can allow manipulation. It can control the scripting language like javascript.</p>
+        </div>
+        <div>
+          <h1 class="text-2xl mt-5 font-semibold">Q-2: <br> How can you select an element from DOM?</h1>
+          <p class="text-lg font-medium mt-3"><span class="underline">Answer-2:</span> <br>
+            i.getElementsByTagName() <br>
+            for example:const allHeadings = document.getElementsByTagName('h1'); <br>
+            The getElementsByTagName() returns the element that matched the passed elements.If  getElementsByTagName is called upon an element, then only children of the element are searched. <br>
+            <br>
+            ii.getElementById() <br>
+            for example: const geometricDetailsContainer = document.getElementById("geometric-details-container"); <br>
+            The getElementById() selects an element based on its unique ID. This is the easiest way to find an HTML element in the DOM tree. <br>
+            <br>
+            iii.getElementsByClassName() <br>
+            for example: const geometryDetails = document.getElementsByClassName("geometry-details"); <br>
+            The getElementsByClassName() method select all the elements specific class name. <br>
+            <br>
+            iv.querySelector() <br>
+            for example: const geometricContainer = document.querySelector('.geometric-container li'); <br>
+            It returns the first element that matched in the document. <br>
+            <br>
+            v.querySelectorAll() <br>
+            for example: const geometricContainer = document.querySelectorAll('.geometric-container li'); <br>
+            It returns all the element of the document. <br>
+          </p>
+        </div>
+        <div>
+          <h1 class="text-2xl mt-5 font-semibold">Q-3: What is event Bubble?</h1>
+          <p class="text-lg font-medium mt-3">Answer-3: Event Bubble is a method of event propagation in the HTML DOM API when an event is an element inside the second element. And it is the concept of DOM.</p>
+        </div>
+        <div>
+          <h1 class="text-2xl mt-5 font-semibold">Q-4: What is the callback Function? What is work of callback Function?</h1>
+          <p class="text-lg font-medium mt-3">Answer-4: A callback function is a function that is to be executed after another function execution. <br>
+            <br>
+            A callback is a function passed into another function as an argument to be executed later.A high order function is a function that accepts another function as an argument.Callback function can be synchronous or asynchronous.
+          </p>
+        </div>
+      </section>
+    </main>  
+</body>
+</html>

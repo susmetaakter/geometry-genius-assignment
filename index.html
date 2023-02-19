@@ -27,7 +27,7 @@
       <section class="flex flex-col lg:flex-row gap-4 w-11/12 mx-auto mt-10 mb-10">
         <div class="geometric-details-container">
           <div class="geometry-details flex flex-col lg:flex-row gap-4">
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div id="card-one" class="card w-96 bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
                 <img src="/images/triangle.png" alt="" class="rounded-xl ml-7" />
               </figure>
@@ -47,7 +47,7 @@
                 <button id="first-card" class="bg-sky-500 px-20 py-1 font-medium rounded text-white mt-5 mr-5 mb-5">Calculate</button>
               </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div id="card-two" class="card w-96 bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
                 <img src="/images/rectangle.png" alt="" class="rounded-xl ml-7" />
               </figure>
@@ -67,86 +67,86 @@
                 <button id="second-card" class="bg-sky-500 px-20 py-1 font-medium rounded text-white mt-5 mr-5 mb-5">Calculate</button>
               </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div id="card-three" class="card w-96 bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
                 <img src="/images/parallelogram.png" alt="" class="rounded-xl ml-7" />
               </figure>
               <div class="card-body items-center text-center">
-                <h2 class="card-title text-2xl font-semibold">Parallelogram</h2>
+                <h2 id="parallelogram" class="card-title text-2xl font-semibold">Parallelogram</h2>
                 <h3 class="mb-2">Area(A) = b * h</h3>
                 <div class="flex ml-20">  
                   <div class="flex"> 
-                   <input class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="b">
+                   <input id="value-pb" class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="b">
                    <p>cm</p>
                  </div>
                  <div class="flex ml-2"> 
-                   <input class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="h">
+                   <input id="value-ph" class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="h">
                    <p>cm</p>
                  </div>
                 </div>
-                <button class="bg-sky-500 px-20 py-1 font-medium rounded text-white mt-5 mr-5 mb-5">Calculate</button>
+                <button id="third-card" class="bg-sky-500 px-20 py-1 font-medium rounded text-white mt-5 mr-5 mb-5">Calculate</button>
               </div>
             </div>
           </div>
           <div class="geometry-details flex flex-col lg:flex-row gap-4">
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div id="card-four" class="card w-96 bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
                 <img src="/images/rhombus.png" alt="" class="rounded-xl ml-7" />
               </figure>
               <div class="card-body items-center text-center">
-                <h2 class="card-title text-2xl font-semibold">Rhombus</h2>
+                <h2 id="rhombus" class="card-title text-2xl font-semibold">Rhombus</h2>
                 <h3 class="mb-2">Area(A) = 0.5 * d <sub>1</sub> * d <sub>2</sub></h3>
                 <div class="flex ml-20">  
                   <div class="flex"> 
-                   <input class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="d">
+                   <input id="value-d1" class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="d1">
                    <p>cm</p>
                  </div>
                  <div class="flex ml-2"> 
-                   <input class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="d2">
+                   <input id="value-d2" class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="d2">
                    <p>cm</p>
                  </div>
                 </div>
-                <button class="bg-sky-500 px-20 py-1 font-medium rounded text-white mt-5 mr-5 mb-5">Calculate</button>
+                <button id="fourth-card" class="bg-sky-500 px-20 py-1 font-medium rounded text-white mt-5 mr-5 mb-5">Calculate</button>
               </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div id="card-five" class="card w-96 bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
                 <img src="/images/pentagon.png" alt="" class="rounded-xl ml-7" />
               </figure>
               <div class="card-body items-center text-center">
-                <h2 class="card-title text-2xl font-semibold">Pentagon</h2>
+                <h2 id="pentagon" class="card-title text-2xl font-semibold">Pentagon</h2>
                 <h3 class="mb-2">Area(A) = 0.5 * p * b</h3>
                 <div class="flex ml-20">  
                   <div class="flex"> 
-                   <input class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="p">
+                   <input id="value-pentagon-p" class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="p">
                    <p>cm</p>
                  </div>
                  <div class="flex ml-2"> 
-                   <input class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="b">
+                   <input id="value-pentagon-b" class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="b">
                    <p>cm</p>
                  </div>
                 </div>
-                <button class="bg-sky-500 px-20 py-1 font-medium rounded text-white mt-5 mr-5 mb-5">Calculate</button>
+                <button id="fifth-card" class="bg-sky-500 px-20 py-1 font-medium rounded text-white mt-5 mr-5 mb-5">Calculate</button>
               </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div id="card-six" class="card w-96 bg-base-100 shadow-xl">
               <figure class="px-10 pt-10">
                 <img src="/images/ellipse.png" alt="" class="rounded-xl ml-7" />
               </figure>
               <div class="card-body items-center text-center">
-                <h2 class="card-title text-2xl font-semibold">Ellipse</h2>
+                <h2 id="ellipse" class="card-title text-2xl font-semibold">Ellipse</h2>
                 <h3 class="mb-2">Area(A) = &#x213C * a * b</h3>
                 <div class="flex ml-20">  
                   <div class="flex"> 
-                   <input class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="a">
+                   <input id="value-ellipse-a" class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="a">
                    <p>cm</p>
                  </div>
                  <div class="flex ml-2"> 
-                   <input class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="b">
+                   <input id="value-ellipse-b" class="bg-slate-200 px-2 w-20 mr-2 rounded" type="text" placeholder="b">
                    <p>cm</p>
                  </div>
                 </div>
-                <button class="bg-sky-500 px-20 py-1 font-medium rounded text-white mt-5 mr-5 mb-5">Calculate</button>
+                <button id="six-card" class="bg-sky-500 px-20 py-1 font-medium rounded text-white mt-5 mr-5 mb-5">Calculate</button>
               </div>
             </div>
           </div>
@@ -174,5 +174,6 @@
     <script src="js/blogging.js"></script>
     <script src="js/index.js"></script>
     <script src="js/function.js"></script>
+    <script src="js/randomColor.js"></script>
 </body>
 </html>
